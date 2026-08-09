@@ -259,11 +259,12 @@ nav a:hover {
   color: #15803D;
   position: relative;
   margin-top: 8px;
-  background: linear-gradient(120deg, #DCFCE7 0%, #BBF7D0 100%);
+  background: rgba(220, 252, 231, 0.65);
+  backdrop-filter: blur(2px);
   padding: 6px 24px;
   border-radius: 20px;
   border: 2.5px dashed #4ADE80;
-  box-shadow: 0 4px 20px rgba(21, 128, 61, 0.18);
+  box-shadow: 0 4px 20px rgba(21, 128, 61, 0.15);
 }
 
 .leaf-icon {
@@ -517,9 +518,10 @@ section {
 }
 
 .compare-card.problem {
-  background: #FFF7EE;
-  border: 2px solid #FED7AA;
-  color: #431407;
+  background: rgba(220, 252, 231, 0.72);
+  backdrop-filter: blur(4px);
+  border: 2px solid #86EFAC;
+  color: #14532d;
 }
 
 .compare-card.solution {
@@ -574,8 +576,9 @@ section {
 }
 
 .prog-card {
-  background: #FFF7EE;
-  border: 2px solid #FED7AA;
+  background: rgba(220, 252, 231, 0.72);
+  backdrop-filter: blur(4px);
+  border: 2px solid #86EFAC;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -720,8 +723,9 @@ section {
 }
 
 .fac-card {
-  background: #FFF7EE;
-  border: 2px solid #FED7AA;
+  background: rgba(220, 252, 231, 0.72);
+  backdrop-filter: blur(4px);
+  border: 2px solid #86EFAC;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -781,13 +785,13 @@ section {
   padding: 14px 16px 4px;
   font-size: 14px;
   font-weight: 800;
-  color: #1e293b;
+  color: #14532d;
 }
 
 .fac-card>p {
   padding: 0 16px 16px;
   font-size: 13px;
-  color: #475569;
+  color: #166534;
   line-height: 1.5;
 }
 
@@ -800,8 +804,9 @@ section {
 }
 
 .testi-card {
-  background: #FFF7EE;
-  border: 2px solid #FED7AA;
+  background: rgba(220, 252, 231, 0.72);
+  backdrop-filter: blur(4px);
+  border: 2px solid #86EFAC;
   border-radius: var(--radius);
   padding: 24px;
   box-shadow: var(--shadow);
