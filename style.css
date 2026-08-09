@@ -1307,7 +1307,7 @@ footer {
   transform: translateY(0);
 }
 
-/* ═══════ RESPONSIVE ═══════ */
+/* ═══════ RESPONSIVE OVERHAUL FOR MOBILE ═══════ */
 @media (max-width: 1024px) {
   .facility-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1321,6 +1321,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* Navigation */
   nav ul {
     display: none;
   }
@@ -1329,64 +1330,209 @@ footer {
     display: block;
   }
 
+  /* Hero Section */
+  .hero {
+    padding: 36px 0 44px;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 32px;
+    gap: 28px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+    line-height: 1.25;
+  }
+
+  .highlight-free {
+    font-size: 28px;
+    padding: 5px 16px;
+    border-radius: 14px;
+    margin-top: 6px;
   }
 
   .hero-sub {
-    margin: 0 auto 28px;
+    font-size: 15px;
+    margin: 12px auto 20px;
+    max-width: 100%;
   }
 
   .hero-stats {
     justify-content: center;
+    gap: 20px;
+    margin-bottom: 24px;
   }
 
-  .hero-img-container {
-    max-width: 320px;
+  .stat-num {
+    font-size: 22px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  /* Dual Cutout Models on Mobile */
+  .hero-dual-container {
+    max-width: 330px;
     margin: 0 auto;
+    gap: 8px;
   }
 
-  .badge-kr {
-    right: 0;
+  .hero-img {
+    max-height: 260px;
   }
 
-  .badge-jp {
-    left: 0;
+  .hero-badge {
+    padding: 4px 10px;
+    font-size: 11px;
+    gap: 4px;
   }
 
+  .badge-kr, .badge-jp {
+    top: 10px;
+  }
+
+  .badge-free {
+    bottom: -6px;
+    font-size: 11px;
+  }
+
+  .floating-decor {
+    font-size: 18px;
+    opacity: 0.65;
+  }
+
+  /* Countdown Banner */
+  .hero-form-section {
+    padding: 0 0 40px;
+  }
+
+  .hero-countdown-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 16px;
+    gap: 16px;
+    border-radius: 16px;
+  }
+
+  .countdown-left h2 {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .countdown-right {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .cd-unit {
+    min-width: 58px;
+    padding: 8px 10px;
+    border-radius: 10px;
+  }
+
+  .cd-num {
+    font-size: 20px;
+  }
+
+  .cd-label {
+    font-size: 10px;
+  }
+
+  /* Deposit Section */
+  .deposit-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .deposit-card {
+    padding: 22px 18px;
+    border-radius: 16px;
+  }
+
+  /* Comparison & Testimonial Grids */
   .compare-grid,
   .testi-row {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .compare-card {
+    padding: 22px 18px;
+  }
+
+  .facility-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .fac-card h4 {
+    padding: 10px 12px 2px;
+    font-size: 13px;
+  }
+
+  .fac-card>p {
+    padding: 0 12px 12px;
+    font-size: 12px;
   }
 
   .photo-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
-  .promo-box {
+  /* Registration Form Card */
+  .form-wrapper {
     grid-template-columns: 1fr;
+    padding: 22px 16px;
+    border-radius: 18px;
+    gap: 24px;
+  }
+
+  .form-info h2 {
+    font-size: 20px;
     text-align: center;
   }
 
-  .form-wrapper {
-    grid-template-columns: 1fr;
-    padding: 28px;
+  .form-info > p {
+    text-align: center;
+    font-size: 13px;
   }
 
   .form-row {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
+  .form-field input,
+  .form-field select,
+  .form-field textarea {
+    padding: 11px 12px;
+    font-size: 13.5px;
+  }
+
+  .btn-submit {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+
+  /* Footer */
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
 
-  .facility-grid {
-    grid-template-columns: 1fr;
-  }
-
+  /* Floating CTA */
   .mobile-cta {
     display: block;
   }
@@ -1394,6 +1540,12 @@ footer {
   .zalo-float {
     bottom: 72px;
     right: 14px;
+  }
+
+  .zalo-bubble {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
   }
 
   .zalo-label {
@@ -1407,10 +1559,32 @@ footer {
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: 28px;
+    font-size: 23px;
   }
 
-  .photo-grid {
+  .highlight-free {
+    font-size: 24px;
+    padding: 4px 12px;
+  }
+
+  .hero-dual-container {
+    max-width: 290px;
+  }
+
+  .hero-img {
+    max-height: 220px;
+  }
+
+  .facility-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cd-unit {
+    min-width: 50px;
+    padding: 6px 8px;
+  }
+
+  .cd-num {
+    font-size: 18px;
   }
 }
