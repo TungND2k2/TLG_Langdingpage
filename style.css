@@ -25,10 +25,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a { text-decoration: none; color: inherit; }
-ul { list-style: none; }
-img { max-width: 100%; display: block; }
-.container { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 :root {
   --orange: #EA580C;
@@ -66,7 +81,7 @@ header {
   z-index: 100;
   background: rgba(255, 247, 238, 0.95);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .header-inner {
@@ -241,15 +256,14 @@ nav a:hover {
   display: inline-block;
   font-size: 48px;
   font-weight: 900;
-  color: #ffffff;
+  color: #15803D;
   position: relative;
   margin-top: 8px;
-  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+  background: linear-gradient(120deg, #DCFCE7 0%, #BBF7D0 100%);
   padding: 6px 24px;
   border-radius: 20px;
-  border: 3px solid #86efac;
-  box-shadow: 0 6px 24px rgba(21, 128, 61, 0.35);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  border: 2.5px dashed #4ADE80;
+  box-shadow: 0 4px 20px rgba(21, 128, 61, 0.18);
 }
 
 .leaf-icon {
@@ -413,8 +427,10 @@ nav a:hover {
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--green);
-  color: #fff;
+  background: #DCFCE7;
+  color: #15803D;
+  border: 1.5px solid #86EFAC;
+  font-weight: 800;
   animation-delay: 0.5s;
 }
 
@@ -501,9 +517,9 @@ section {
 }
 
 .compare-card.problem {
-  background: #DCFCE7;
-  border: 2px solid #86EFAC;
-  color: #14532d;
+  background: #FFF7EE;
+  border: 2px solid #FED7AA;
+  color: #431407;
 }
 
 .compare-card.solution {
@@ -558,8 +574,8 @@ section {
 }
 
 .prog-card {
-  background: #DCFCE7;
-  border: 2px solid #86EFAC;
+  background: #FFF7EE;
+  border: 2px solid #FED7AA;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -704,8 +720,8 @@ section {
 }
 
 .fac-card {
-  background: #DCFCE7;
-  border: 2px solid #86EFAC;
+  background: #FFF7EE;
+  border: 2px solid #FED7AA;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -765,13 +781,13 @@ section {
   padding: 14px 16px 4px;
   font-size: 14px;
   font-weight: 800;
-  color: #14532d;
+  color: #1e293b;
 }
 
 .fac-card>p {
   padding: 0 16px 16px;
   font-size: 13px;
-  color: #166534;
+  color: #475569;
   line-height: 1.5;
 }
 
@@ -784,8 +800,8 @@ section {
 }
 
 .testi-card {
-  background: #DCFCE7;
-  border: 2px solid #86EFAC;
+  background: #FFF7EE;
+  border: 2px solid #FED7AA;
   border-radius: var(--radius);
   padding: 24px;
   box-shadow: var(--shadow);
