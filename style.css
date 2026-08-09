@@ -19,7 +19,7 @@ html {
 body {
   font-family: 'Segoe UI', 'Baloo 2', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   color: #3a3a3a;
-  background-color: #FFEEDD;
+  background-color: #FFEBD6;
   line-height: 1.65;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
@@ -50,7 +50,7 @@ img {
   --orange-light: #FFEDD5;
   --green: #15803D;
   --green-light: #DCFCE7;
-  --cream: #FFF7EE;
+  --cream: #FFF7F0;
   --dark: #1a1a2e;
   --gray: #475569;
   --gray-light: #f1f5f9;
@@ -63,12 +63,12 @@ img {
 .hero {
   position: relative;
   padding: 60px 0 70px;
-  background-color: #FFEEDD;
+  background-color: #FFEBD6;
   background-image:
-    linear-gradient(45deg, #FFDEC0 25%, transparent 25%),
-    linear-gradient(-45deg, #FFDEC0 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #FFDEC0 75%),
-    linear-gradient(-45deg, transparent 75%, #FFDEC0 75%);
+    linear-gradient(45deg, #FFD8B3 25%, transparent 25%),
+    linear-gradient(-45deg, #FFD8B3 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #FFD8B3 75%),
+    linear-gradient(-45deg, transparent 75%, #FFD8B3 75%);
   background-size: 40px 40px;
   background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
   overflow: hidden;
@@ -518,8 +518,8 @@ section {
 }
 
 .compare-card.problem {
-  background: #FFEDD5;
-  border: 2px solid #FED7AA;
+  background: #FFF7F0;
+  border: 2px solid #FFE0C2;
   color: #431407;
 }
 
@@ -575,8 +575,8 @@ section {
 }
 
 .prog-card {
-  background: #FFEDD5;
-  border: 2px solid #FED7AA;
+  background: #FFF7F0;
+  border: 2px solid #FFE0C2;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -721,8 +721,8 @@ section {
 }
 
 .fac-card {
-  background: #FFEDD5;
-  border: 2px solid #FED7AA;
+  background: #FFF7F0;
+  border: 2px solid #FFE0C2;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -801,8 +801,8 @@ section {
 }
 
 .testi-card {
-  background: #FFEDD5;
-  border: 2px solid #FED7AA;
+  background: #FFF7F0;
+  border: 2px solid #FFE0C2;
   border-radius: var(--radius);
   padding: 24px;
   box-shadow: var(--shadow);
@@ -810,7 +810,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
 }
 
 .testi-card:hover {
