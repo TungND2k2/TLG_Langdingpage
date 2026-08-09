@@ -501,9 +501,9 @@ section {
 }
 
 .compare-card.problem {
-  background: #FFF7EE;
-  border: 2px solid #FED7AA;
-  color: #431407;
+  background: #DCFCE7;
+  border: 2px solid #86EFAC;
+  color: #14532d;
 }
 
 .compare-card.solution {
@@ -558,8 +558,8 @@ section {
 }
 
 .prog-card {
-  background: #FFF7EE;
-  border: 2px solid #FED7AA;
+  background: #DCFCE7;
+  border: 2px solid #86EFAC;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -704,8 +704,8 @@ section {
 }
 
 .fac-card {
-  background: #FFF7EE;
-  border: 2px solid #FED7AA;
+  background: #DCFCE7;
+  border: 2px solid #86EFAC;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -765,13 +765,13 @@ section {
   padding: 14px 16px 4px;
   font-size: 14px;
   font-weight: 800;
-  color: #1e293b;
+  color: #14532d;
 }
 
 .fac-card>p {
   padding: 0 16px 16px;
   font-size: 13px;
-  color: #475569;
+  color: #166534;
   line-height: 1.5;
 }
 
@@ -784,8 +784,8 @@ section {
 }
 
 .testi-card {
-  background: #FFF7EE;
-  border: 2px solid #FED7AA;
+  background: #DCFCE7;
+  border: 2px solid #86EFAC;
   border-radius: var(--radius);
   padding: 24px;
   box-shadow: var(--shadow);
