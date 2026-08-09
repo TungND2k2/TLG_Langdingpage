@@ -337,6 +337,24 @@ nav a:hover {
   box-shadow: 0 10px 28px rgba(255, 107, 53, 0.45);
 }
 
+.btn-hero-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 14px 28px;
+  border-radius: 100px;
+  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.35);
+  transition: transform .2s, box-shadow .2s;
+  margin-top: 4px;
+}
+
+.btn-hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(234, 88, 12, 0.45);
+}
+
 .hero-visual {
   position: relative;
   display: flex;
@@ -1276,23 +1294,26 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 998;
-  padding: 10px 14px;
-  background: rgba(255, 255, 255, .96);
-  backdrop-filter: blur(8px);
-  box-shadow: 0 -2px 12px rgba(0, 0, 0, .06);
+  z-index: 999;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(234, 88, 12, 0.15);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .mobile-cta a {
   display: block;
   text-align: center;
-  background: var(--orange);
-  color: #fff;
-  font-weight: 700;
-  font-size: 14px;
-  padding: 12px;
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13.5px;
+  padding: 11px 16px;
   border-radius: 100px;
-  box-shadow: 0 2px 12px rgba(255, 107, 53, .3);
+  box-shadow: 0 3px 12px rgba(234, 88, 12, 0.35);
+  letter-spacing: 0.2px;
 }
 
 /* ═══════ SCROLL ANIMATION ═══════ */
