@@ -518,10 +518,9 @@ section {
 }
 
 .compare-card.problem {
-  background: rgba(220, 252, 231, 0.72);
-  backdrop-filter: blur(4px);
-  border: 2px solid #86EFAC;
-  color: #14532d;
+  background: #FFEDD5;
+  border: 2px solid #FED7AA;
+  color: #431407;
 }
 
 .compare-card.solution {
@@ -576,9 +575,8 @@ section {
 }
 
 .prog-card {
-  background: rgba(220, 252, 231, 0.72);
-  backdrop-filter: blur(4px);
-  border: 2px solid #86EFAC;
+  background: #FFEDD5;
+  border: 2px solid #FED7AA;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -723,9 +721,8 @@ section {
 }
 
 .fac-card {
-  background: rgba(220, 252, 231, 0.72);
-  backdrop-filter: blur(4px);
-  border: 2px solid #86EFAC;
+  background: #FFEDD5;
+  border: 2px solid #FED7AA;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -785,13 +782,13 @@ section {
   padding: 14px 16px 4px;
   font-size: 14px;
   font-weight: 800;
-  color: #14532d;
+  color: #1e293b;
 }
 
 .fac-card>p {
   padding: 0 16px 16px;
   font-size: 13px;
-  color: #166534;
+  color: #475569;
   line-height: 1.5;
 }
 
@@ -804,9 +801,8 @@ section {
 }
 
 .testi-card {
-  background: rgba(220, 252, 231, 0.72);
-  backdrop-filter: blur(4px);
-  border: 2px solid #86EFAC;
+  background: #FFEDD5;
+  border: 2px solid #FED7AA;
   border-radius: var(--radius);
   padding: 24px;
   box-shadow: var(--shadow);
@@ -814,6 +810,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
 }
 
 .testi-card:hover {
