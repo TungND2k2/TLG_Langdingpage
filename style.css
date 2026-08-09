@@ -32,16 +32,16 @@ img { max-width: 100%; display: block; }
 
 :root {
   --orange: #EA580C;
-  --orange-light: #FFF3EB;
-  --green: #16a34a;
-  --green-light: #EAFAF0;
+  --orange-light: #FFEDD5; /* Cam đậm đà, rõ nét hơn */
+  --green: #15803D;  /* Xanh lá đậm sắc sảo */
+  --green-light: #DCFCE7; /* Xanh lá nền đậm đà hơn */
   --cream: #FFF7EE;
   --dark: #1a1a2e;
-  --gray: #6b7280;
-  --gray-light: #f3f4f6;
+  --gray: #475569;
+  --gray-light: #f1f5f9;
   --radius: 16px;
-  --shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
-  --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.10);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 12px 40px rgba(0, 0, 0, 0.12);
 }
 
 .checker-bg,
@@ -219,13 +219,14 @@ nav a:hover {
 
 .badge {
   display: inline-block;
-  background: var(--orange-light);
-  color: var(--orange);
+  background: linear-gradient(135deg, #ea580c, #c2410c);
+  color: #ffffff;
   font-size: 13px;
-  font-weight: 700;
-  padding: 6px 16px;
+  font-weight: 800;
+  padding: 7px 18px;
   border-radius: 100px;
   margin-bottom: 16px;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.35);
 }
 
 .hero h1 {
@@ -240,14 +241,15 @@ nav a:hover {
   display: inline-block;
   font-size: 48px;
   font-weight: 900;
-  color: #16a34a;
+  color: #ffffff;
   position: relative;
   margin-top: 8px;
-  background: linear-gradient(120deg, rgba(34, 197, 94, 0.14) 0%, rgba(16, 185, 129, 0.2) 100%);
-  padding: 6px 20px;
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+  padding: 6px 24px;
   border-radius: 20px;
-  border: 2px dashed rgba(34, 197, 94, 0.5);
-  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.15);
+  border: 3px solid #86efac;
+  box-shadow: 0 6px 24px rgba(21, 128, 61, 0.35);
+  text-shadow: 0 2px 4px rgba(0,0,0,0.25);
 }
 
 .leaf-icon {
@@ -504,8 +506,10 @@ section {
 }
 
 .compare-card.solution {
-  background: var(--green-light);
-  border: 1px solid #d1fae5;
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+  border: 2px solid #86efac;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(21, 128, 61, 0.25);
 }
 
 .compare-label {
@@ -524,7 +528,8 @@ section {
 }
 
 .compare-card.solution .compare-label {
-  color: var(--green);
+  color: #ffffff;
+  font-weight: 900;
 }
 
 .compare-card ul li {
@@ -533,6 +538,11 @@ section {
   font-size: 15px;
   color: #374151;
   line-height: 1.6;
+}
+
+.compare-card.solution ul li {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .compare-card ul li:last-child {
@@ -636,18 +646,24 @@ section {
 }
 
 .tag-orange {
-  background: var(--orange-light);
-  color: var(--orange);
+  background: #ea580c;
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.3);
 }
 
 .tag-green {
-  background: var(--green-light);
-  color: var(--green);
+  background: #15803d;
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 2px 8px rgba(21, 128, 61, 0.3);
 }
 
 .tag-amber {
-  background: #FEF3C7;
-  color: #D97706;
+  background: #d97706;
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
 }
 
 .prog-card h3 {
@@ -928,12 +944,13 @@ section {
 }
 
 .deposit-card {
-  background: var(--cream);
-  border: 1px solid #fed7aa;
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
+  border: 2px solid #fdba74;
   border-radius: var(--radius);
   padding: 32px 24px;
   text-align: left;
-  box-shadow: var(--shadow);
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(234, 88, 12, 0.25);
   transition: transform .25s;
 }
 
@@ -942,8 +959,10 @@ section {
 }
 
 .deposit-card.highlight-card {
-  background: var(--green-light);
-  border-color: #a7f3d0;
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+  border: 2px solid #86efac;
+  color: #ffffff;
+  box-shadow: 0 10px 30px rgba(21, 128, 61, 0.25);
 }
 
 .dep-icon {
@@ -953,15 +972,21 @@ section {
 
 .deposit-card h3 {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 900;
   margin-bottom: 12px;
-  color: var(--dark);
+  color: #ffffff;
 }
 
 .deposit-card p {
   font-size: 14px;
-  color: #4b5563;
+  color: #ffffff;
   line-height: 1.6;
+  opacity: 0.96;
+}
+
+.deposit-card strong {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .dep-steps {
@@ -970,10 +995,11 @@ section {
 }
 
 .dep-steps li {
-  font-size: 13px;
-  color: #374151;
+  font-size: 13.5px;
+  color: #ffffff;
   margin-bottom: 8px;
   line-height: 1.5;
+  opacity: 0.96;
 }
 
 /* ═══════ FORM STYLES ═══════ */
@@ -1023,17 +1049,19 @@ section {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: .5px;
-  color: var(--orange);
-  background: var(--orange-light);
-  padding: 6px 12px;
+  color: #ffffff;
+  background: #ea580c;
+  padding: 6px 14px;
   border-radius: 6px;
   width: fit-content;
   margin-top: 4px;
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.3);
 }
 
 .form-section-title.refund-title {
-  color: var(--green);
-  background: var(--green-light);
+  color: #ffffff;
+  background: #15803d;
+  box-shadow: 0 2px 8px rgba(21, 128, 61, 0.3);
 }
 
 .form-row {
