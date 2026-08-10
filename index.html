@@ -165,12 +165,11 @@
         </div>
       </div>
 
-      <!-- Form đăng ký + Nhập STK hoàn cọc -->
+      <!-- PHẦN 1: Thông tin đăng ký -->
       <div class="form-wrapper">
         <div class="form-info">
           <h2>Đăng Ký Học Thử <span>Miễn Phí 0Đ</span></h2>
-          <p>Điền thông tin và Số tài khoản ngân hàng để trung tâm ghi nhận vị trí giữ suất và tự động hoàn trả 100%
-            tiền cọc sau khóa học.</p>
+          <p>Điền thông tin để trung tâm ghi nhận vị trí giữ suất. Sau khi đăng ký, bạn sẽ chuyển cọc giữ chỗ và được hoàn trả 100% sau khóa học.</p>
           <ul class="form-benefits">
             <li>✅ <strong>Học phí 0 đồng</strong> cho lớp Sơ cấp 1-2</li>
             <li>✅ <strong>Cam kết hoàn cọc 100%</strong> sau khóa học</li>
@@ -180,7 +179,7 @@
         </div>
 
         <form id="registration-form" class="reg-form">
-          <div class="form-section-title">📌 Thông tin cá nhân</div>
+          <div class="form-section-title">📌 Thông tin đăng ký</div>
           <div class="form-row">
             <div class="form-field">
               <label for="fullname">Họ và Tên *</label>
@@ -209,6 +208,52 @@
             </div>
           </div>
 
+          <!-- CAM KẾT HOÀN TIỀN (nằm giữa form) -->
+          <div class="refund-guarantee-box">
+            <div class="refund-guarantee-icon">🛡️</div>
+            <div class="refund-guarantee-content">
+              <h3>Cam Kết Hoàn Tiền 100%</h3>
+              <p>Trung tâm <strong>cam kết hoàn lại 100% tiền cọc (300.000đ)</strong> sau khi học viên hoàn thành 80% thời lượng khóa học Sơ cấp 1–2. Tiền sẽ được chuyển trực tiếp vào STK ngân hàng bạn đã đăng ký.</p>
+            </div>
+          </div>
+
+          <!-- QR CODE CHUYỂN KHOẢN ĐẶT CỌC -->
+          <div class="qr-deposit-section">
+            <div class="form-section-title qr-title">📱 Quét QR để đặt cọc giữ chỗ (300.000đ)</div>
+            <div class="qr-deposit-card">
+              <div class="qr-image-wrap">
+                <img src="image/qr/qr_techcombank.jpg" alt="QR Chuyển khoản Techcombank - BUI THI THUY DUONG" class="qr-image">
+              </div>
+              <div class="qr-info">
+                <div class="qr-bank-logo">
+                  <span class="qr-bank-name">TECHCOMBANK</span>
+                </div>
+                <div class="qr-detail">
+                  <div class="qr-detail-row">
+                    <span class="qr-label">Chủ tài khoản:</span>
+                    <span class="qr-value">BUI THI THUY DUONG</span>
+                  </div>
+                  <div class="qr-detail-row">
+                    <span class="qr-label">Số tài khoản:</span>
+                    <span class="qr-value">1903 6628 5680 11</span>
+                  </div>
+                  <div class="qr-detail-row">
+                    <span class="qr-label">Số tiền cọc:</span>
+                    <span class="qr-value qr-amount">300.000 VNĐ</span>
+                  </div>
+                  <div class="qr-detail-row">
+                    <span class="qr-label">Nội dung CK:</span>
+                    <span class="qr-value">[Họ tên] - [SĐT] - Đặt cọc</span>
+                  </div>
+                </div>
+                <div class="qr-note">
+                  <p>💡 Sau khi chuyển khoản, vui lòng điền thông tin tài khoản nhận hoàn cọc bên dưới để trung tâm hoàn trả 100% sau khóa học.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHẦN 2: Thông tin tài khoản nhận hoàn cọc -->
           <div class="form-section-title refund-title">💳 Thông tin tài khoản nhận HOÀN CỌC (Hoàn lại 100%)</div>
           <div class="form-row">
             <div class="form-field">
