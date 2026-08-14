@@ -137,9 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const phone = document.getElementById('phone').value;
       const language = document.getElementById('language').value;
       const format = document.getElementById('format').value;
-      const bankName = document.getElementById('bank-name').value;
-      const bankAccount = document.getElementById('bank-account').value;
-      const bankHolder = document.getElementById('bank-holder').value;
       
       const btn = regForm.querySelector('.btn-submit');
       const originalText = btn.textContent;
@@ -150,10 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fullname,
         phone,
         language,
-        format,
-        bankName,
-        bankAccount,
-        bankHolder
+        format
       };
 
       // Gửi dữ liệu sang Google Sheet nếu có URL
@@ -167,10 +161,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       
       setTimeout(() => {
-        btn.textContent = '✅ Đăng ký & Ghi nhận STK thành công!';
+        btn.textContent = '✅ Đăng ký thành công!';
         btn.style.background = '#2D9F46';
 
-        alert(`🎉 Cảm ơn ${fullname}!\n\nBạn đã đăng ký giữ suất thành công lớp ${language} (0 đồng).\nThông tin nhận hoàn cọc ngân hàng (${bankName} - ${bankAccount}) đã được ghi nhận thành công.\nBộ phận tư vấn Thinh Long Group sẽ liên hệ qua SĐT/Zalo: ${phone} trong thời gian sớm nhất.`);
+        alert(`🎉 Cảm ơn ${fullname}!\n\nBạn đã đăng ký giữ suất thành công lớp ${language} (Học phí 0 đồng).\nBộ phận tư vấn Thinh Long Group sẽ liên hệ qua SĐT/Zalo: ${phone} trong thời gian sớm nhất.`);
         
         setTimeout(() => {
           btn.textContent = originalText;
