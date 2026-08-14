@@ -1,6 +1,6 @@
 /* ═══════════════════════════════════════════
    THINH LONG GROUP - LANDING PAGE CSS
-   Clean, Professional, Modern Design
+   Clean, Professional, Modern Design (v2.2)
    ═══════════════════════════════════════════ */
 
 /* --- Reset & Base --- */
@@ -970,77 +970,6 @@ section {
   color: var(--gray);
 }
 
-/* ═══════ DEPOSIT & REFUND POLICY ═══════ */
-.deposit-section {
-  padding: 70px 0;
-  background: #fff;
-}
-
-.deposit-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.deposit-card {
-  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%);
-  border: 2px solid #fdba74;
-  border-radius: var(--radius);
-  padding: 32px 24px;
-  text-align: left;
-  color: #ffffff;
-  box-shadow: 0 10px 30px rgba(234, 88, 12, 0.25);
-  transition: transform .25s;
-}
-
-.deposit-card:hover {
-  transform: translateY(-4px);
-}
-
-.deposit-card.highlight-card {
-  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
-  border: 2px solid #86efac;
-  color: #ffffff;
-  box-shadow: 0 10px 30px rgba(21, 128, 61, 0.25);
-}
-
-.dep-icon {
-  font-size: 32px;
-  margin-bottom: 16px;
-}
-
-.deposit-card h3 {
-  font-size: 18px;
-  font-weight: 900;
-  margin-bottom: 12px;
-  color: #ffffff;
-}
-
-.deposit-card p {
-  font-size: 14px;
-  color: #ffffff;
-  line-height: 1.6;
-  opacity: 0.96;
-}
-
-.deposit-card strong {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.dep-steps {
-  padding-left: 0;
-  list-style: none;
-}
-
-.dep-steps li {
-  font-size: 13.5px;
-  color: #ffffff;
-  margin-bottom: 8px;
-  line-height: 1.5;
-  opacity: 0.96;
-}
-
 /* ═══════ FORM STYLES ═══════ */
 .form-wrapper {
   display: grid;
@@ -1159,175 +1088,40 @@ section {
   box-shadow: 0 10px 28px rgba(255, 107, 53, 0.45);
 }
 
-/* ═══════ REFUND GUARANTEE BOX ═══════ */
-.refund-guarantee-box {
+/* ═══════ REWARD COMMITMENT (IN-FORM & SECTION) ═══════ */
+.reward-box {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
+  gap: 14px;
   background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
   border: 2px solid #86efac;
-  border-radius: 16px;
-  padding: 20px 24px;
-  margin-top: 4px;
-  box-shadow: 0 4px 16px rgba(21, 128, 61, 0.1);
-  position: relative;
-  overflow: hidden;
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-top: 6px;
+  box-shadow: 0 4px 16px rgba(21, 128, 61, 0.08);
 }
 
-.refund-guarantee-box::before {
-  content: '';
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 100px;
-  height: 100px;
-  background: rgba(21, 128, 61, 0.06);
-  border-radius: 50%;
-}
-
-.refund-guarantee-icon {
-  font-size: 36px;
+.reward-icon {
+  font-size: 28px;
   flex-shrink: 0;
-  animation: shieldPulse 2.5s ease-in-out infinite;
+  line-height: 1;
 }
 
-@keyframes shieldPulse {
-
-  0%,
-  100% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.1);
-  }
-}
-
-.refund-guarantee-content h3 {
-  font-size: 16px;
+.reward-text h4 {
+  font-size: 14px;
   font-weight: 800;
   color: #15803d;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
-.refund-guarantee-content p {
-  font-size: 13.5px;
+.reward-text p {
+  font-size: 13px;
   color: #374151;
-  line-height: 1.6;
-}
-
-.refund-guarantee-content strong {
-  color: #15803d;
-}
-
-/* ═══════ QR DEPOSIT SECTION ═══════ */
-.qr-deposit-section {
-  margin-top: 4px;
-}
-
-.form-section-title.qr-title {
-  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.3);
-  color: #ffffff;
-}
-
-.qr-deposit-card {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 24px;
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-  border: 2px solid #7dd3fc;
-  border-radius: 16px;
-  padding: 24px;
-  margin-top: 12px;
-  box-shadow: 0 4px 16px rgba(2, 132, 199, 0.1);
-}
-
-.qr-image-wrap {
-  width: 200px;
-  height: 200px;
-  background: #fff;
-  border-radius: 12px;
-  padding: 8px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.qr-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 8px;
-}
-
-.qr-info {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.qr-bank-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.qr-bank-name {
-  font-size: 18px;
-  font-weight: 900;
-  color: #1e3a5f;
-  letter-spacing: 1px;
-  background: linear-gradient(135deg, #0c4a6e, #0369a1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.qr-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.qr-detail-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 13.5px;
-}
-
-.qr-label {
-  color: #64748b;
-  font-weight: 600;
-  min-width: 120px;
-  flex-shrink: 0;
-}
-
-.qr-value {
-  color: #1e293b;
-  font-weight: 700;
-}
-
-.qr-amount {
-  color: #dc2626;
-  font-size: 16px;
-  font-weight: 900;
-}
-
-.qr-note {
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-  padding: 10px 14px;
-  border-left: 3px solid #0284c7;
-}
-
-.qr-note p {
-  font-size: 12.5px;
-  color: #475569;
   line-height: 1.55;
+}
+
+.reward-text strong {
+  color: #15803d;
 }
 
 /* ═══════ FOOTER ═══════ */
@@ -1643,17 +1437,6 @@ footer {
     font-size: 10px;
   }
 
-  /* Deposit Section */
-  .deposit-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-  }
-
-  .deposit-card {
-    padding: 22px 18px;
-    border-radius: 16px;
-  }
-
   /* Comparison & Testimonial Grids */
   .compare-grid,
   .testi-row {
@@ -1720,50 +1503,23 @@ footer {
     font-size: 14px;
   }
 
-  /* QR & Refund Guarantee Mobile */
-  .refund-guarantee-box {
-    padding: 16px 14px;
-    gap: 12px;
+  /* Reward Commitment Mobile */
+  .reward-box {
+    padding: 14px;
+    gap: 10px;
     border-radius: 12px;
   }
 
-  .refund-guarantee-icon {
-    font-size: 28px;
+  .reward-icon {
+    font-size: 24px;
   }
 
-  .refund-guarantee-content h3 {
-    font-size: 14px;
+  .reward-text h4 {
+    font-size: 13.5px;
   }
 
-  .refund-guarantee-content p {
-    font-size: 12.5px;
-  }
-
-  .qr-deposit-card {
-    grid-template-columns: 1fr;
-    padding: 16px;
-    gap: 16px;
-    text-align: center;
-  }
-
-  .qr-image-wrap {
-    width: 180px;
-    height: 180px;
-    margin: 0 auto;
-  }
-
-  .qr-detail-row {
-    flex-direction: column;
-    gap: 2px;
-    text-align: center;
-  }
-
-  .qr-label {
-    min-width: auto;
-  }
-
-  .qr-note {
-    text-align: left;
+  .reward-text p {
+    font-size: 12px;
   }
 
   /* Footer */
